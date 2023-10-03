@@ -1,7 +1,7 @@
 class Coche {
     #nombre = "estado default";
     #roto = 0;
-    #prendio =0;
+    #ganas= 1;
 
 
     setNombre(nombre) {
@@ -18,10 +18,15 @@ class Coche {
     }
 
     auto(conductor) {
-        if (this.#roto > 0) {
-            console.log("encendido");
+        
+    if ((conductor.getAnimo()===0)&&(this.#roto===0)) {
+        console.log("no encuentro la llave")
+        this.#ganas--
+    }
+        if (this.#roto >= 0 &&(this.#ganas===1)) {
+            console.log("encendiedo");
             conductor.movimiento(this);
-        } if (this.#roto===0) {
+        } if (this.#roto===0 &&(this.#ganas===1)) {
             console.log("no enciende");
             if (conductor.getAnimo()>0) {
                 console.log("no puedo ir me quiero matar")
