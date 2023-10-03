@@ -2,9 +2,6 @@ import { Coche } from "./Coche.js";
 import { Hombre } from "./Hombre.js";
 
 
-
-
-
 const carlos = new Hombre();
 const elRojo = new Coche();
 carlos.setNombre("Carlos");

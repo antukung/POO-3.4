@@ -5,7 +5,6 @@ class Hombre {
     #animo = 0;
     #llego = 0;
     
-    
 
     setNombre(nombre) {
         this.#nombre = nombre;
@@ -27,17 +26,22 @@ class Hombre {
     movimiento(persona) {
          if (this.#animo > 0) {
             console.log("en movimiento");
-            this.#llego++
-        }   if (this.#llego <=0) {
+            this.#llego++;
+        }   if (this.#llego ===1) {
             console.log("estoy en camino")
-            this.#llego++
-        }    else {
+            this.#llego++;
+        }   
+        if (this.#llego===2){
+            console.log("en 5 minutos estoy")
+            this.#llego++;
+        }
+         if(this.#llego ===3){
             console.log("llegue")
         }
-        if (this.#llego===1){
-            console.log("en 5 minutos estoy")
+        if (this.#animo ===0){
+            console.log("no voy NI ahi")
         }
-    }
+}
 }
 
 export {Hombre};
