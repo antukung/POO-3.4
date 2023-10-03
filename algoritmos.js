@@ -7,7 +7,7 @@ const elRojo = new Coche();
 carlos.setNombre("Carlos");
 elRojo.setNombre("el Rojo");
 elRojo.setRoto(1);
-carlos.setAnimo(0);
+carlos.setAnimo(1);
 
 carlos.subirAl(elRojo);
 

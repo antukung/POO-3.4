@@ -41,6 +41,7 @@ class Hombre {
         if (this.#animo ===0){
             console.log("no voy NI ahi")
         }
+
 }
 }
 
